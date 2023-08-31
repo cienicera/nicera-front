@@ -21,10 +21,10 @@ export default function Cie() {
       </div>
       <div className="grid grid-cols-1  grid-flow-row  justify-center content-center text-sm max-w-4xl">
         <nav className="grid grid-flow-col gap-4 justify-between mx-10 font-light">
-          <a href="/creations" className="text-lg ">Nicera</a>
-          <a href="#other" className="text-lg ">Other</a>
+          <a href="/creations" className="text-sm lg:text-lg underline underline-offset-4 lg:underline-offset-8 ">#1_Nicera</a>
+          
         </nav>
-        <div className="p-10 text-sm text-black row-span-1  grid content-start md:grid-cols-5 w-full m-10">
+        <div className="p-4 lg:p-10 text-sm text-black row-span-1  grid content-start md:grid-cols-5 w-full lg:m-10">
             {/* <h1 className="md: col-span-5 text-4xl text-black mt-8 mb-10 font-extrabold underline text-right">NICERA</h1> */}
             <div className=" md:col-span-3  mb-10 bg-gradient-to-r from-gray-800 to-gray-300 w-auto px-4 h-8 top-0 ml-8 rounded-full text-xs grid  content-center justify-center text-white ">
               <p>
@@ -32,11 +32,14 @@ export default function Cie() {
               </p>
             </div>
             
-          <p className="md:col-span-3 text-5xl font-bold uppercase">Lignes <br /> <b className="text-6xl bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-green-500"> d'histoires</b> <br /> inscrites <br /><i className="font-bold text-xl">dans chaque articulation,</i> </p>
-          <i className="md:col-span-2">  Le passé prend
+          <p className="md:col-span-3 text-4xl lg:text-5xl font-bold uppercase">Lignes <br /> 
+            <b className="text-5xl lg:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-green-500"> d'histoires</b> <br />
+            inscrites <br /><i className="font-bold text-xl">dans chaque articulation,</i> 
+           </p>
+          <i className="md:col-span-2 mr-4">le passé prend
           forme, danse silencieuse en résonance, Mémoire sculptée dans chaque
           muscle et expression, Le corps devient le théâtre où s'anime cette
-          danse. *Chaque pas, une trajectoire, chaque geste, une partition, Les
+          danse. Chaque pas, une trajectoire, chaque geste, une partition, Les
           souvenirs s'animent, tissant une chorégraphie commune, Les rythmes et
           les émotions s'enlacent, Dans la fluidité des mouvements, l'histoire
           se dévoile.</i>
