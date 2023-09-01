@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+body {
+
+  overflow: scroll; 
+}
+
+#blur {
+  height: 100%;
+  width: 100%;
+  left:0;
+  position: absolute;
+  z-index: 2;
+  backdrop-filter: blur(12vmax);
+}
+
+h1 {
+  font-family: ''Space Mono', monospace';
+  color: white;
+  border-radius: clamp(0.4rem, 0.75vw, 1rem);
+  z-index: 3;
+}
+
+
+.hover-effect {
+  transition: transform 0.3s;
+}
+
+.hover-effect:hover {
+  transform: scale(1.1);
+}
+
+
+.overlay {
+  background: linear-gradient(to bottom, transparent, white);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
