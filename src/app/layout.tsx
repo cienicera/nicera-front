@@ -6,6 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 import Image from "next/image";
 import Navigation from "./component/navbar";
+import Footer from "./component/footer";
 
 export const metadata: Metadata = {
   title: "Audience-Interactive Artistic Performances",
@@ -25,7 +26,9 @@ export default function RootLayout({
 
         </header>
           <div className={inter.className}>{children}</div>
+          
       </body>
+      <Footer />
     </html>
   );
 }
