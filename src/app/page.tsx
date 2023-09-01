@@ -7,13 +7,13 @@ import Navigation from './component/navbar';
 export default function Home() {
     const [isClient, setIsClient] = useState(false);
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-    const blobRef = useRef(null);
+    const blobRef = useRef<HTMLElement | null>(null);
 
     useEffect(() => {
       setIsClient(true);
     }, []);
 
-    const handleMouseMove = event => {
+    const handleMouseMove = (event: React.MouseEvent) => {
       const { clientX, clientY } = event;
       setMousePosition({ x: clientX, y: clientY });
     };
@@ -32,17 +32,18 @@ export default function Home() {
       animateBlob();
     }, [mousePosition]);
 
-    const changeText = (event) => {
+    const changeText = (event: React.MouseEvent) => {
       const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
       let iteration = 0;
-      const target = event.currentTarget;
+      const target = event.currentTarget as HTMLElement; // Type assertion here
 
       const interval = setInterval(() => {
+        if (target.dataset.value) {
         target.innerText = target.dataset.value
           .split("")
           .map((letter, index) => {
             if(index < iteration) {
-              return target.dataset.value[index];
+              return target.dataset.value ? target.dataset.value[index] : '';
             }
 
             return letters[Math.floor(Math.random() * 26)]
@@ -54,6 +55,7 @@ export default function Home() {
         }
       
         iteration += 1 / 3;
+      }
       }, 30);
     };
 
