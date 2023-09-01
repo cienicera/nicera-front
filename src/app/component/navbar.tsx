@@ -21,9 +21,9 @@ export default function Navigation() {
     }, []);
 
     return (
-        <nav className={`fixed top-0 mx-2 pt-4 pl-8 pb-4  flex justify-between items-center w-full px-8 z-50 transition-all duration-500 ease-in-out ${isScrolled ? 'backdrop-blur-sm rounded-xl' : ''}`}>
+        <nav className={`fixed top-0 mx-2 pt-4 lg:pl-8 pb-4  px-2 lg:px-8 flex justify-between items-center w-full  z-50 transition-all duration-500 ease-in-out ${isScrolled ? 'backdrop-blur-sm rounded-xl' : ''}`}>
             <Link href='/' > <Image src='/NICERA 4x.png' alt="Nicera" width={50} height={50} />  </Link>
-            <div className='flex gap-4 px-4 text-white font-light '>
+            <div className='grid grid-flow-col lg:gap-4 lg:px-4 text-white font-light '>
                 <Link href="/cie"><button className='flex flex-grow  p-4 rounded-xl w-32 justify-center hover-effect hover:font-bold'>Compagnie</button></Link>
                 <Link href="/creations"><button className='flex flex-grow  p-4 rounded-xl  w-32 justify-center hover-effect hover:font-bold'>Creations</button></Link>
                 <Link href="/"><button className='flex flex-grow  p-4 rounded-xl  w-32 justify-center hover-effect hover:font-bold'>Actualite</button></Link>

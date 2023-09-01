@@ -55,3 +55,34 @@ h1 {
   width: 100%;
   height: 100%;
 }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+}
+
+.footer-title {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.footer-slogan {
+  
+  background: url('/colorbg.gif');
+  background-size: 200% auto;
+  animation: shake 5s linear infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation:  2.5s linear infinite;
+}
+
+@keyframes shake {
+  0% { background-position: 0 200%; }
+  100% { background-position: 0 0; }
+}
