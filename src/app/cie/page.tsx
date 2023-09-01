@@ -17,7 +17,7 @@ export default function Cie() {
       </div>
       <div className="grid  lg:grid-cols-5 grid-flow-row justify-center content-center text-sm">
         <div className="p-10  text-white lg:col-span-2 grid content-start ">
-          Fondée en 2022 par la chorégraphe Katia Lharaig, la compagnie Nicera
+          Fondée en 2022 par la chorégraphe Katia Lharaig, la compagnie NICERA
           naît d'un vif intérêt pour l'exploration identitaire à travers la
           mémoire corporelle et les liens avec autrui. Forte de son expérience
           en tant que danseuse au sein de diverses compagnies, elle a donné vie
