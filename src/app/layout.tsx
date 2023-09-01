@@ -8,8 +8,8 @@ import Image from "next/image";
 import Navigation from "./component/navbar";
 
 export const metadata: Metadata = {
-  title: "Nicera labs",
-  description: "Audience-Interactive Artistic Performances",
+  title: "Audience-Interactive Artistic Performances",
+  description: "Nicera Labs crafts interactive performances using an on-chain interface, enabling audience participation in artistic creation. Utilizing a toolchain grounded in Cairo, it integrates component systems to foster collaborative co-production. ",
 };
 
 export default function RootLayout({
